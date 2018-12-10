@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="page\css\login.css">
+  <link rel="stylesheet" type="text/css" href="page\js\login.js">
+  <link rel="stylesheet" type="text/css" href="page\css\dropdown.css">
+  <link rel="stylesheet" type="text/css" href="page\js\carusel.js">
+  <link rel="stylesheet" type="text/css" href="page\css\carusel.css">
+  <link rel="stylesheet" type="text/css" href="page\css\content-column.css">
+  <link rel="stylesheet" type="text/css" href="page\css\container.css">
+</head>
+
+<body>
+<!--Button-->
+  <div class="dropdown" style="float:left;">
+    <div class="Hamburger"></div>
+    <div class="Hamburger"></div>
+    <div class="Hamburger"></div>
+    <div class="dropdown-content" style="left:0;">
+      <a href="#">Lesson</a>
+      <a href="#">Worksheets</a>
+      <a href="#">Teacher Profile</a>
+      <a href="#">Forums</a>
+      <a href="#">Help</a>
+    </div>
+  </div>
+
+  <div class="dropdown" style="float:right;">
+    <i class="fa fa-angle-down"></i>
+      <div class="dropdown-content">
+        <span onclick="document.getElementById('id03').style.display='block'" style="width:auto;"><a href="#">Register</a></span>
+        <span onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="#">Login</a></span>
+      </div>
+  </div>
+
+<!--Login-->
+	<div id="id01" class="modal">
+  
+  	  <form class="modal-content animate" action="/action_page.php">
+    	  <div class="imgcontainer">
+      		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    	  </div>
+
+    		<div class="container">
+            <h1>Login</h1>
+
+      			<label for="e-mail"><b>E-mail</b></label>
+      			<input type="text" placeholder="Enter E-mail" name="e-mail" required><br>
+
+      			<label for="psw"><b>Password</b></label>
+      			<input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      			<button type="submit">Login</button><br>
+      			<label>
+        			<input type="checkbox" checked="checked" name="remember"> Remember me
+      			</label>
+    		</div>
+
+    		<div class="container" style="background-color:#f1f1f1">
+      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      			<span class="psw"><a href="#">Forgot password?</a></span>
+    		</div>
+  		</form>
+	</div>
+
+<!--Register-->
+  <div id="id03" class="modal">
+  
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+            <h1>Register</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Comfirm Password" name="psw-confirm" required>
+
+            <button type="submit" class="signupbtn">Register</button>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1" align="right">
+            <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+      </form>
+  </div>
+<br><br>
+<!--Carusel-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="page\images\test1.png" ">
+      </div>
+
+      <div class="item">
+        <img src="page\images\test2.png" ">
+      </div>
+    
+      <div class="item">
+        <img src="page\images\test3.png" ">
+      </div>
+  
+    </div>
+  </div>
+
+<!--Content-Column-->
+  <div class="row">
+    <div class="column" style="background-color:#aaa;" align="center">
+      <h2>Lesson</h2>
+      <div class="container">
+        <img src="img_snow.jpg" alt="Snow" style="width:100%">
+        <button class="btn">Learn Now</button>
+      </div>
+    </div>
+
+    <div class="column" style="background-color:#bbb;" align="center">
+      <h2>Worksheets</h2>
+      <div class="container">
+        <img src="img_snow.jpg" alt="Snow" style="width:100%">
+        <button class="btn">Go Now</button>
+      </div>
+    </div>
+
+    <div class="column" style="background-color:#ccc;" align="center">
+      <h2>Forums</h2>
+      <div class="container">
+        <img src="img_snow.jpg" alt="Snow" style="width:100%">
+        <button class="btn">Join the Conversation</button>
+      </div>
+    </div>
+  </div>
+<p></p>
+<a href=""></a>
+</body>
+</html>
