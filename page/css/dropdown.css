@@ -16,7 +16,7 @@
   display: none;
   position: absolute;
   right: 0;
-  background-color: #f9f9f9;
+  background-color: #FFFFFF;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -29,14 +29,14 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #d5f2f2;}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #FFFFFF;
 }
 
 .Hamburger {
