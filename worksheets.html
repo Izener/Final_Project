@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FAQ</title>
+  <title>Lesson</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,12 +11,11 @@
   <link rel="stylesheet" type="text/css" href="page\css\container.css">
   <link rel="stylesheet" type="text/css" href="page\css\login.css">
   <link rel="stylesheet" type="text/css" href="page\js\login.js">
-  <link rel="stylesheet" type="text/css" href="page\css\help.css">
-  <link rel="stylesheet" type="text/css" href="page\js\help.js">
-</head>
+  <link rel="stylesheet" type="text/css" href="page\css\lesson.css">
 
+</head>
 <body>
-<!--Button-->
+  <!--Button-->
   <div class="dropdown" style="float:left;">
     <div class="Hamburger"></div>
     <div class="Hamburger"></div>
@@ -100,54 +99,31 @@
       </form>
   </div><br><br>
 
-<!--HELP-->
-  <div align="center">
-  <div class="container-help">
-    <h2>FAQ</h2>
+<div class="header">
+  <h1>Worksheets</h1>
+</div>
 
-    <button class="collapsible">Open Section 1</button>
-      <div class="collapse-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div><br>
-
-    <button class="collapsible">Open Section 2</button>
-      <div class="collapse-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div><br>
-
-    <button class="collapsible">Open Section 3</button>
-      <div class="collapse-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div><br>
-
-    <button class="collapsible">Open Section 4</button>
-      <div class="collapse-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div><br>
-
-    <button class="collapsible">Open Section 5</button>
-      <div class="collapse-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>Lesson 1</li>
+      <li>Lesson 2</li>
+      <li>Lesson 3</li>
+      <li>Lesson 4</li>
+    </ul>
   </div>
-<!--Collapse JS-->
-  <script type="text/javascript">
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
 
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-    });
-    }
-  </script>
+  <div class="col-6 col-s-9">
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  </div>
+
+  
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
 
 </body>
 </html>

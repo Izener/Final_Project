@@ -16,7 +16,7 @@ button {
     background-color: #3399FF;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    /*margin: 8px 0;*/
     border: none;
     cursor: pointer;
     width: 100%;
@@ -68,6 +68,7 @@ span.psw {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     padding-top: 60px;
 }
+
 
 /* Modal Content/Box */
 .modal-content {

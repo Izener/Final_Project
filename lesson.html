@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="page\css\dropdown.css">
-  <link rel="stylesheet" type="text/css" href="page\js\carusel.js">
-  <link rel="stylesheet" type="text/css" href="page\css\content-column.css">
   <link rel="stylesheet" type="text/css" href="page\css\container.css">
-  <link rel="stylesheet" type="text/css" href="page\css\button-color.css">
   <link rel="stylesheet" type="text/css" href="page\css\login.css">
   <link rel="stylesheet" type="text/css" href="page\js\login.js">
-</head>
+  <link rel="stylesheet" type="text/css" href="page\css\lesson.css">
+  <link rel="stylesheet" type="text/css" href="page\js\lesson.js">
 
+</head>
 <body>
 
 <!--Button-->
@@ -28,6 +27,7 @@
       <a href="lesson.html">Lesson</a>
       <a href="worksheets.html">Worksheets</a>
       <a href="forum.html">Forums</a>
+      <a href="teacher.html">Teacher Profile</a>
       <a href="contact-us.html">Contact Us</a>
       <a href="help.html">Help</a>
     </div>
@@ -42,34 +42,34 @@
   </div>
 
 <!--Login-->
-	<div id="id01" class="modal">
+  <div id="id01" class="modal">
   
-  	  <form class="modal-content animate" action="/action_page.php">
-    	  <div class="imgcontainer">
-      		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-    	  </div>
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
 
-    		<div class="container">
+        <div class="container">
             <h1>Login</h1>
 
-      			<label for="e-mail"><b>E-mail</b></label>
-      			<input type="text" placeholder="Enter E-mail" name="e-mail" required><br>
+            <label for="e-mail"><b>E-mail</b></label>
+            <input type="text" placeholder="Enter E-mail" name="e-mail" required><br>
 
-      			<label for="psw"><b>Password</b></label>
-      			<input type="password" placeholder="Enter Password" name="psw" required><br><br><br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required><br><br><br>
         
-      			<button type="submit">Login</button><br>
-      			<label>
-        			<input type="checkbox" checked="checked" name="remember"> Remember me
-      			</label>
-    		</div>
+            <button type="submit">Login</button><br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
 
-    		<div class="container" style="background-color:#f1f1f1">
-      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      			<span class="psw"><a href="#">Forgot password?</a></span>
-    		</div>
-  		</form>
-	</div>
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+      </form>
+  </div>
 
 <!--Register-->
   <div id="id03" class="modal">
@@ -101,60 +101,38 @@
       </form>
   </div><br><br>
 
-<!--Carusel-->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="page\images\test1.png" style="width: 100%">
-      </div>
-
-      <div class="item">
-        <img src="page\images\test2.png" style="width: 100%">
-      </div>
-    
-      <div class="item">
-        <img src="page\images\test3.png" style="width: 100%">
-      </div>
-  
-    </div>
+  <div class="header">
+    <h1>Lesson</h1>
   </div>
 
-<!--Content-Column-->
+<!--lesson menu-->
   <div class="row">
 
-    <div class="column" style="background-color:#005b87;" align="center">
-      <h2>Lesson</h2><br><br>
-      <div class="container">
-          <button class="btn" style="max-width: 250px">Learn Now</button>
-      </div><br>
-      <img src="page\images\lesson-icon.png">
+    <div class="col-3 col-s-3 menu">
+      <ul>
+        <div class="tab">
+          <li class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Lesson 1</li>
+          <li class="tablinks" onclick="openCity(event, 'Paris')">Lesson 2</li>
+          <li class="tablinks" onclick="openCity(event, 'Tokyo')">Lesson 3</li>
+          <li>Lesson 4</li>
+          <li>Lesson 5</li>
+        </div>
+      </ul>
     </div>
 
-    <div class="column" style="background-color:#0079b0;" align="center">
-      <h2>Worksheets</h2><br><br>
-      <div class="container">
-          <button class="btn" style="max-width: 250px">Go Now</button>
-      </div><br><br>
-      <img src="page\images\worksheets-icon.png">
+    <div id="London" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
     </div>
 
-    <div class="column" style="background-color:#005b87;" align="center">
-      <h2>Forums</h2><br><br>
-      <div class="container">
-          <button class="btn" style="max-width: 250px">Join the Conversation</button>
-      </div><br><br>
-      <img src="page\images\conver-icon.png">
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p> 
     </div>
 
-    </div>
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
     </div>
   </div>
 
@@ -168,6 +146,26 @@
     </div>
   </footer>
 
+<!--script menu-->
+  <script type="text/javascript">
+    function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  </script>
 
 </body>
 </html>

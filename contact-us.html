@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FAQ</title>
+  <title>Contact-us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,11 +11,11 @@
   <link rel="stylesheet" type="text/css" href="page\css\container.css">
   <link rel="stylesheet" type="text/css" href="page\css\login.css">
   <link rel="stylesheet" type="text/css" href="page\js\login.js">
-  <link rel="stylesheet" type="text/css" href="page\css\help.css">
-  <link rel="stylesheet" type="text/css" href="page\js\help.js">
-</head>
+  <link rel="stylesheet" type="text/css" href="page\css\contact-us.css">
 
+</head>
 <body>
+
 <!--Button-->
   <div class="dropdown" style="float:left;">
     <div class="Hamburger"></div>
@@ -100,54 +100,30 @@
       </form>
   </div><br><br>
 
-<!--HELP-->
-  <div align="center">
-  <div class="container-help">
-    <h2>FAQ</h2>
+<!--Contact-us-->
 
-    <button class="collapsible">Open Section 1</button>
-      <div class="collapse-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div><br>
-
-    <button class="collapsible">Open Section 2</button>
-      <div class="collapse-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div><br>
-
-    <button class="collapsible">Open Section 3</button>
-      <div class="collapse-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div><br>
-
-    <button class="collapsible">Open Section 4</button>
-      <div class="collapse-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div><br>
-
-    <button class="collapsible">Open Section 5</button>
-      <div class="collapse-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="container-contact">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="\page\images\kmutt-map.png" style="width:70%" align="right">
       </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
     </div>
   </div>
-<!--Collapse JS-->
-  <script type="text/javascript">
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+</div>
 
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-    });
-    }
-  </script>
 
 </body>
 </html>
