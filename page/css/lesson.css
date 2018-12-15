@@ -13,32 +13,35 @@
   padding: 15px;
 }
 
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
 .header {
-  background-color: #9933cc;
-  color: #ffffff;
+  background-color: #57c8d0;
+  color: black;
   padding: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Georgia, serif;
 }
 
 .menu ul {
   list-style-type: none;
-  margin: 0;
+  margin-top: 0px;
   padding: 0;
+  margin-left: 42.5%;
+  margin-right: 10%;
+
 }
 
 .menu li {
   padding: 8px;
   margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
+  background-color: #57c8d0;
+  color: black;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-align: center;
 }
 
 .menu li:hover {
-  background-color: #0099cc;
+  background-color: #d5f2f2;
 }
 
 .aside {
@@ -94,13 +97,12 @@ html {
   .col-12 {width: 100%;}
 }
 
-body {font-family: Arial;}
-
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 0px solid #ccc;
+  font-family: Georgia, serif;
+  font-size: 18px;
 }
 
 /* Style the buttons inside the tab */
@@ -113,6 +115,7 @@ body {font-family: Arial;}
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+
 }
 
 /* Change background color of buttons on hover */
@@ -131,4 +134,8 @@ body {font-family: Arial;}
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  margin-top: 16px;
+  margin-left: 22.5%;
+  margin-right: 10.75%;
+  font-family: Georgia, serif;
 }

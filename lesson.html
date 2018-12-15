@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="page\js\login.js">
   <link rel="stylesheet" type="text/css" href="page\css\lesson.css">
   <link rel="stylesheet" type="text/css" href="page\js\lesson.js">
+  <link rel="stylesheet" type="text/css" href="page\css\footer.css">
 
 </head>
 <body>
@@ -24,10 +25,8 @@
     <div class="Hamburger"></div>
     <div class="dropdown-content" style="left:0;">
       <a href="index.html">Home</a>
-      <a href="lesson.html">Lesson</a>
-      <a href="worksheets.html">Worksheets</a>
+      <a href="lesson.html">Lesson & Worlsheets</a>
       <a href="forum.html">Forums</a>
-      <a href="teacher.html">Teacher Profile</a>
       <a href="contact-us.html">Contact Us</a>
       <a href="help.html">Help</a>
     </div>
@@ -102,20 +101,20 @@
   </div><br><br>
 
   <div class="header">
-    <h1>Lesson</h1>
+    <h1>Lesson & Worksheets</h1>
   </div>
 
 <!--lesson menu-->
   <div class="row">
-
+    
     <div class="col-3 col-s-3 menu">
       <ul>
         <div class="tab">
           <li class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Lesson 1</li>
           <li class="tablinks" onclick="openCity(event, 'Paris')">Lesson 2</li>
           <li class="tablinks" onclick="openCity(event, 'Tokyo')">Lesson 3</li>
-          <li>Lesson 4</li>
-          <li>Lesson 5</li>
+          <li class="tablinks" onclick="openCity(event, 'Bangkok')">Lesson 4</li>
+          <li class="tablinks" onclick="openCity(event, 'New York')">Lesson 5</li>
         </div>
       </ul>
     </div>
@@ -134,38 +133,44 @@
       <h3>Tokyo</h3>
       <p>Tokyo is the capital of Japan.</p>
     </div>
-  </div>
 
-<!--Footer-->
-  <footer class="w3-container w3-padding-16" style="background-color: #f5f5f5;color: grey;font-size: 11px;padding-left: 30px">
-    <div class="w3-row">
-      <div class="w3-third w3-container "><br>
-        <p><b>Powered by NANCHAPORN</b></p>
-        <p>© 2018 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
-      </div>
+    <div id="Bangkok" class="tabcontent">
+      <h3>Bangkok</h3>
+      <p>Bangkok is the capital of Thailand.</p>
     </div>
-  </footer>
+
+    <div id="New York" class="tabcontent">
+      <h3>New York</h3>
+      <p>New York is the capital of America.</p>
+    </div>
+  </div>
+ 
+<!--Footer-->
+  <div class="footer">
+    <p><b>Powered by NANCHAPORN</b></p>
+    <p>© 2018 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
+  </div> 
 
 <!--script menu-->
   <script type="text/javascript">
     function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+  // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
   </script>
+
 
 </body>
 </html>
