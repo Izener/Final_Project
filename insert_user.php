@@ -27,7 +27,7 @@
 	{
 		$encrypt_password=shal($psw);
 		//new record
-		$sql = "Insert into usertbl(user, email, password)"."value('$user', '$email', '$encrypt_password');";
+		$sql = "Insert into usertbl(user, email, password)"."values('$user', '$email', '$encrypt_password');";
 		$result = mysqli_query($link, $sql);
 		if ($result)
 		{
