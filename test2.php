@@ -1,3 +1,4 @@
+<?php include('\login\server.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,14 +51,14 @@
 
     		<div class="container">
             <h1>Login</h1>
-            	<form method="post" action="check_user.php">
-      				<label for="user"><b>Username</b></label>
-      				<input type="text" placeholder="Enter Username" name="user" required><br>
+            	<form method="post" action="test2.html">
+      				<label for="e-mail"><b>E-mail</b></label>
+      				<input type="text" placeholder="Enter E-mail" name="e-mail" required><br>
 
       				<label for="psw"><b>Password</b></label>
       				<input type="password" placeholder="Enter Password" name="psw" required><br><br><br>
         
-      				<button type="submit" value="login">Login</button><br>
+      				<button type="submit">Login</button><br>
       				<label>
         				<input type="checkbox" checked="checked" name="remember"> Remember me
       				</label>
@@ -82,20 +83,22 @@
         <div class="container">
             <h1>Register</h1>
 
-            <form method="post" action="insert_user.php">
+            <form method="post" action="test2.html">
 
-            	<label for="username"><b>Username</b></label>
-            	<input type="text" placeholder="Enter Username" name="user" required>
+              <label for="username"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="username" required>
 
-            	<label for="email"><b>E-mail</b></label>
+            	<label for="email"><b>Email</b></label>
             	<input type="text" placeholder="Enter Email" name="email" required>
 
             	<label for="psw"><b>Password</b></label>
             	<input type="password" placeholder="Enter Password" name="psw" required>
-
+              
+              <label for="psw-repeat"><b>Confirm Password</b></label>
+              <input type="password" placeholder="Comfirm Password" name="psw-confirm" required>
 
             	<br><br>
-            	<button type="submit" class="signupbtn" value="OK">Register</button>
+            	<button type="submit" class="signupbtn">Register</button>
             </form>
         </div>
 
