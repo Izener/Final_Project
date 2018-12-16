@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Contact-us</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,10 +13,9 @@
   <link rel="stylesheet" type="text/css" href="page\css\login.css">
   <link rel="stylesheet" type="text/css" href="page\js\login.js">
   <link rel="stylesheet" type="text/css" href="page\css\contact-us.css">
-  <link rel="stylesheet" type="text/css" href="page\css\footer.css">
-
 </head>
-<body>
+
+<body background="page\images\help-bg.png">
 
 <!--Button-->
   <div class="dropdown" style="float:left;">
@@ -25,7 +25,6 @@
     <div class="dropdown-content" style="left:0;">
       <a href="index.html">Home</a>
       <a href="lesson.html">Lesson & Worlsheets</a>
-      <a href="forum.html">Forums</a>
       <a href="contact-us.html">Contact Us</a>
       <a href="help.html">Help</a>
     </div>
@@ -100,9 +99,8 @@
   </div><br><br>
 
 <!--Contact-us-->
-
   <div class="container-contact">
-    <div style="text-align:center">
+    <div style="text-align:center; font-family: Georgia, serif;">
       <h2>Contact Us</h2>
     </div>
     <div class="row">
@@ -115,6 +113,8 @@
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="lname">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="Your Email..">
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
         <input type="submit" value="Submit">
@@ -124,12 +124,14 @@
 </div>
 
 <!--Footer-->
-  <div class="footer">
-    <br>
-    <p><b>Powered by NANCHAPORN</b></p>
-    <p>© 2018 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
-  </div> 
-
+  <footer class="w3-container w3-padding-16" style="font-size: 11px;">
+    <div class="w3-row">
+      <div class="w3-third w3-container "><br>
+        <p align="center"><b>Powered by NANCHAPORN</b></p>
+        <p align="center">© 2018 Math by Kru-Som All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
+      </div>
+    </div>
+  </footer>
 
 
 </body>

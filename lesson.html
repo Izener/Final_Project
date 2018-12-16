@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Lesson</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="page\css\footer.css">
 
 </head>
-<body>
+<body background="page\images\help-bg1.png">
 
 <!--Button-->
   <div class="dropdown" style="float:left;">
@@ -26,7 +27,6 @@
     <div class="dropdown-content" style="left:0;">
       <a href="index.html">Home</a>
       <a href="lesson.html">Lesson & Worlsheets</a>
-      <a href="forum.html">Forums</a>
       <a href="contact-us.html">Contact Us</a>
       <a href="help.html">Help</a>
     </div>
@@ -110,45 +110,283 @@
     <div class="col-3 col-s-3 menu">
       <ul>
         <div class="tab">
-          <li class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Lesson 1</li>
-          <li class="tablinks" onclick="openCity(event, 'Paris')">Lesson 2</li>
-          <li class="tablinks" onclick="openCity(event, 'Tokyo')">Lesson 3</li>
-          <li class="tablinks" onclick="openCity(event, 'Bangkok')">Lesson 4</li>
-          <li class="tablinks" onclick="openCity(event, 'New York')">Lesson 5</li>
-        </div>
+          <li class="tablinks" onclick="openCity(event, 'Lesson 1 Part 1')" id="defaultOpen">การวัดค่ากลางของข้อมูล</li>
+          <li class="tablinks" onclick="openCity(event, 'Lesson 1 Part 2')">การวัดตําแหน่งหรือตําแหน่งสัมพัทธ์ของข้อมูล </li>
+          <li class="tablinks" onclick="openCity(event, 'Lesson 1 Part 3')">การวัดการกระจาย</li>
+          <li class="tablinks" onclick="openCity(event, 'Lesson 2 Part 1')">การแจกแจงปกติ</li>
+          <li class="tablinks" onclick="openCity(event, 'Lesson 2 Part 2')">การแจกแจงปกติและเส้นโค้งปกติ</li>
       </ul>
     </div>
 
-    <div id="London" class="tabcontent">
-      <h3>London</h3>
-      <p>London is the capital city of England.</p>
+<!--Lesson 1 Part 1-->
+    <div id="Lesson 1 Part 1" class="tabcontent">
+      <h1><b></b>การวัดค่ากลางของข้อมูล</h1>
+      <div align="center">
+       <iframe width="871" height="490" src="https://www.youtube.com/embed/ghPm55F898A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การหาค่ากลางของข้อมูลที่เป็นตัวแทนของข้อมูลทั้งหมดเพื่อความสะดวกในการสรุปเรื่องราวเกี่ยวกับข้อมูลนั้นๆ จะช่วยทำให้เกิดการวิเคราะห์ข้อมูลถูกต้องดีขึ้นการหาค่ากลางของข้อมูลมีวิธีหาหลายวิธี แต่ละวิธีมีข้อดีและข้อเสีย และมีความเหมาะสมในการนำไปใช้ไม่เหมือนกัน ขึ้นอยู่กับลักษณะข้อมูลและวัตถุประสงค์ของผู้ใช้ข้อมูลนั้นๆ
+      ค่ากลางของข้อมูลที่สำคัญ มี 3 ชนิด คือ
+      <br><b>1. ค่าเฉลี่ยเลขคณิต (Arithmetic mean)</b>
+      <br><div align="center"><img src="page\images\l1-1.jpg"></div>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตัวอย่าง</b> จากการสอบถามอายุของนักเรียนกลุ่มหนึ่งเป็นดังนี้ 14 , 16 , 14 , 17 , 16 , 14 , 18 , 17
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) จงหาค่าเฉลี่ยเลขคณิตของอายุนักเรียนกลุ่มนี้
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) ถ้ามีนักเรียนมาเพิ่มอีก 1 คน และมีอายุเป็น 17 ปี ค่าเฉลี่ยเลขคณิตเป็นเท่าใด
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) เมื่อ 3 ปีที่แล้ว ค่าเฉลี่ยเลขคณิตของอายุนักเรียนกลุ่มนี้เป็นเท่าใด
+      <br><div align="center"><img src="page\images\l1-2.jpg"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ค่าเฉลี่ยเลขคณิตของนักเรียนกลุ่มนี้ คือ 15.75 ปี
+      <br><div align="center"><img src="page\images\l1-3.jpg"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตัวอย่าง จากตารางแจกแจงความถี่ของคะแนนสอบของนักเรียน 40 คน ดังนี้ จงหาค่าเฉลี่ยเลขคณิต
+      <br><div align="center"><img src="page\images\l1-4.jpg"></div>
+      <br><div align="center"><img src="page\images\l1-5.jpg"></div>
+      <br><div align="center"><img src="page\images\l1-6.jpg"></div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตัวอย่าง</b> ในการสอบวิชาสถิติของนักเรียนโรงเรียนปราณีวิทยา ปรากฏว่านักเรียนชั้น ม.6/1 จำนวน 40 คนได้ค่าเฉลี่ยเลขคณิตของคะแนนสอบเท่ากับ 70คะแนน 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นักเรียนชั้น ม.6/2 จำนวน 35 คน ได้ค่าเฉลี่ยเลขคณิตของคะแนนสอบเท่ากับ 68 คะแนน นักเรียนชั้น ม.6/3 จำนวน 38 คน ได้ค่าเฉลี่ยเลขคณิตของคะแนนสอบเท่ากับ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;72 คะแนน จงหาค่าเฉลี่ยเลขคณิตของคะแนนสอบของนักเรียนทั้ง 3 ห้องรวมกัน
+      <br><div align="center"><img src="page\images\l1-7.jpg"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>2. มัธยฐาน (Median)</b>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้อควรสนใจ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. เนื่องจากตำแหน่งกึ่งกลางเป็นตำแหน่งที่เราจะหามัธยฐาน ดังนั้น เราจะเรียกตำแหน่งนี้ว่า ตำแหน่งของมัธยฐาน
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. เราไม่สามารถหาตำแหน่งกึ่งกลางโดยวิธีการตามตัวอย่างข้างต้น เพราะต้องเสีย เวลาในการนำค่าจากการสังเกตมาเขียนเรียงกัน ทีละตำแหน่ง ดังนั้น เราจะใช้วิธี
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การคำนวณหา โดยสังเกตดังนี้
+      <br><div align="center"><img src="page\images\l1-8.jpg"></div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-. ในการหามัธยฐาน ความสำคัญอยู่ที่ นักเรียนต้องหาตำแหน่งของมัธยฐานให้ได้ เสียก่อนแล้วจึงไปหาค่าของข้อมูล ณ ตำแหน่งนั้น
+      ตัวอย่าง กำหนดให้ค่าจากการ
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สังเกตในข้อมูลชุดหนึ่ง มีดังนี้ 5, 9, 16, 15, 2, 6, 1, 4, 3, 4, 12, 20, 14, 10, 9, 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8, 6, 4, 5, 13 จงหามัธยฐาน วิธีทำ เรียงข้อมูล 1 , 2 , 3 , 4 , 4 , 4 , 5 , 5 , 6 , 6 , 8 , 9 , 9 , 10 , 12 , 13 , 14 , 15 , 16 , 20
+      <br><div align="center"><img src="page\images\l1-9.jpg"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การหามัธยฐานของข้อมูลที่จัดเป็นอันตรภาคชั้น
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ขั้นตอนในการหามัธยฐานมีดังนี้
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1) สร้างตารางความถี่สะสม
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2)หาตำแหน่งของมัธยฐาน คือ 
+      <br><div align="center"><img src="page\images\l1-10.jpg">เมื่อ N เป็นจำนวนของข้อมูลทั้งหมด</div>
+      <div align="center"><img src="page\images\l1-11.jpg"></div>
+      <br><div align="center"><img src="page\images\l1-12.jpg"></div>
+      <br><div align="center"><img src="page\images\l1-13.jpg"></div>
+      <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. ฐานนิยม (Mode)</b>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สิ่งที่ต้องรู้ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. ถ้าข้อมูลแต่ละค่าที่แตกต่างกัน มีความถี่เท่ากันหมด เช่น ข้อมูลที่ประกอบด้วย 2 , 7 , 9 , 11 , 13 จะพบว่า แต่ละค่าของข้อมูลที่แตกต่างกัน จะมีความถี่เท่ากับ 1 เหมือนกัน
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หมด ในที่นี้แสดงว่า ไม่นิยมค่าของข้อมูลตัวใดตัวหนึ่งเป็นพิเศษ ดังนั้น เราถือว่า ข้อมูลในลักษณะดังกล่าวนี้ ไม่มีฐานนิยม
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. ถ้าข้อมูลแต่ละค่าที่แตกต่างกัน มีความถี่สูงสุดเท่ากัน 2 ค่า เช่น ข้อมูลที่ ประกอบด้วย 2, 4, 4, 7, 7, 9, 8, 5 จะพบว่า 4 และ 7 เป็นข้อมูลที่มีความถี่สูงสุดเท่ากับ 2 เท่ากัน 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ในลักษณะเช่นนี้ เราถือว่า ข้อมูลดังกล่าวมีฐานนิยม 2 ค่า คือ 4 และ 7
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. จากข้อ 1, 2, และตัวอย่าง แสดงว่า ฐานนิยมของข้อมูล อาจจะมีหรือไม่มีก็ได้ ถ้ามีอาจจะมีมากกว่า 1 ค่าก็ได้
+      <br><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Download Worksheet</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 100px; color: black; background-color: #57c8d0">Download</button>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Upload Worksheet</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 100px; color: black; background-color: #57c8d0">Upload</button>
+      <br><br><br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.thaigoodview.com/library/teachershow/bangkok/pisamorn_s/sec02p01.html">http://www.thaigoodview.com/library/teachershow/bangkok/pisamorn_s/sec02p01.html</a>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://wiki.stjohn.ac.th/groups/poly_ordinarycourse/wiki/60de1/_9_.html">https://wiki.stjohn.ac.th/groups/poly_ordinarycourse/wiki/60de1/_9_.html</a>
+      </p>
     </div>
 
-    <div id="Paris" class="tabcontent">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p> 
+<!--Lesson 1 Part 2-->
+    <div id="Lesson 1 Part 2" class="tabcontent">
+      <h1>การวัดตําแหน่งหรือตําแหน่งสัมพัทธ์ของข้อมูล </h1>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จากหัวข้อก่อนเรื่องค่ากลางของข้อมูล มัธยฐานเป็นค่าที่สามารถหาได้จากการพิจารณาตำแหน่งที่อยู่ตรงกลางของชุดข้อมูลเมื่อเรียงลำดับแล้ว ซึ่งค่ามัธยฐานบอกให้เราทราบว่ามีข้อมูลที่น้อยกว่าหรือมากกว่าค่ากลางนี้เป็นปริมาณเท่าๆ กัน
+      นอกจากการหาตำแหน่งข้อมูลที่อยู่ตรงกลางแล้ว เรายังสามารถหาตำแหน่งข้อมูลตัวใดก็ได้ ตรงไหนก็ได้ในชุดข้อมูลนั้นโดยเรียงลำดับข้อมูลจากน้อยไปมากก่อน จากนั้นแบ่งข้อมูลออกเป็นกลุ่มๆ และเทียบตำแหน่งข้อมูลตัวที่ต้องการกับข้อมูลที่เหลือ ซึ่งเราเรียกว่า การหาตำแหน่งสัมพัทธ์ของข้อมูล
+      ตำแหน่งสัมพัทธ์ของข้อมูลที่นิยมใช้มีอยู่ 3 แบบ ได้แก่
+      1) ควอร์ไทล์ (Quartile) - ภายหลังจากเรียงข้อมูลแบบน้อยไปมากแล้ว จะแบ่งข้อมูลออกเป็น 4 กลุ่มเท่าๆ กัน ซึ่งจะเกิดจุดแบ่ง 3 จุด ดูรูปประกอบนะคะ
+      <br><div align="center"><img src="page\images\l2-1.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เรียกจุดแบ่งเหล่านี้ว่า ควอร์ไทล์ที่ 1 (Q1), ควอร์ไทล์ที่ 2 (Q2) และ ควอร์ไทล์ที่ 3 (Q3) ตามลำดับ
+      - ที่ Q1 บอกให้เราทราบว่า มีจำนวนข้อมูลที่มีค่าน้อยกว่าจุดนี้อยู่
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ประมาณ 1/4 (25%) และมีจำนวนข้อมูลที่มีค่ามากกว่าจุดนี้อยู่ประมาณ 3/4 (75%)
+      - ที่ Q2 เราทราบได้ว่า มีจำนวนข้อมูลที่มีค่าน้อยกว่าจุดนี้อยู่ประมาณครึ่งหนึ่งของข้อมูล
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทั้งหมด (50%) และมีจำนวนข้อมูลที่มีค่ามากกว่าจุดนี้อยู่ประมาณครึ่งหนึ่งเช่นกัน - ที่ Q3 ทำให้เราทราบว่า มีจำนวน
+      ข้อมูลที่มีค่าน้อยกว่าจุดนี้อยู่ประมาณ 3/4 (75%) และมี
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จำนวนข้อมูลที่มีค่ามากกว่าจุดนี้อยู่ประมาณ 1/4 (25%) 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div align="center">โดยเราจะสามารถหาตำแหน่งควอร์ไทล์ได้ดังนี้สำหรับข้อมูลที่ยังไม่ได้แจกแจงความถี่ ปปป ปปปQr = ข้อมูล ณ ตำแหน่งที่ <img src="page\images\l2-2.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div align="center">สำหรับข้อมูลที่แจกแจงความถี่แล้ว ปปปปปปปปปQr = <img src="page\images\l2-3.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เมื่อ L เป็นค่าขอบล่างของชั้นที่มีค่า Qr อยู่, W เป็นค่าความกว้างของอันตรภาคชั้นนั้น, 
+      <br><div align="center"><img src="page\images\l2-4.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เป็นความถี่สะสมตั้งแต่ชั้นแรกจนถึงชั้นที่ m (ชั้นที่ต่ำกว่าขอบล่าง) และ fQr เป็นค อย่าลืมว่า ข้อมูลจะต้องเรียงลำดับจากน้อยไปมากก่อนเสมอความถี่ของอันตรภาคชั้นนั้น
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตัวอย่าง</b> การหาค่าตำแหน่งสัมพัทธ์ สำหรับข้อมูลที่ยังไม่ได้แจกแจงความถี่ข้อมูลรายได้ต่อเดือนของชาวบ้าน 10 คนในหมู่บ้านแห่งหนึ่ง เป็นดังนี้ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5500   3100   4700   6300   3100   2800   4500   6100   5000    5200 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ให้หาค่ามัธยฐาน ควอร์ไทล์ที่ 3 และเปอร์เซนไทล์ที่ 60 ของข้อมูลชุดนี้ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>วิธีทำ</b> ก่อนอื่นต้องเรียงลำดับข้อมูลจากน้อยไปมากก่อน จะได้ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2800  3100   3100   4500   4700   5000   5200   5500   6100   6300
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) มัธยฐาน
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่งของมัธยฐาน = (10+1)/2 = 5.5 ซึ่งเป็นตำแหน่งตรงกลางระหว่างตำแหน่งที่ 5 กับ 6 ดังนั้นต้องคิดเฉลี่ยแบ่งครึ่งเอา
+      ค่ามัธยฐาน = (4700+5000)/2 = 4850 บาท
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) ควอร์ไทล์ที่ 3
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page\images\l2-4.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง Q3 =
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 8.25 ซึ่งอยู่ระหว่างตำแหน่งที่ 8 และ 9 (5500 และ 6100) 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q3 = 5500+0.25(6100-5500) = 5650 บาท
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) เปอร์เซนไทล์ที่ 60
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง P60 =<img src="page\images\l2-5.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 6.6 ซึ่งอยู่ระหว่างตำแหน่งที่ 6 และ 7 (5000 และ 5200)
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P60 = 5000+0.6(5200-5000) = 5120 บาท
+      <br><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Download Worksheet</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 100px; color: black; background-color: #57c8d0">Download</button>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Upload Worksheet</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 100px; color: black; background-color: #57c8d0">Upload</button>
+      <br><br><br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.scimath.org/socialnetwork/groups/viewbulletin/694-6+การหาตำแหน่งสัมพัทธ์ของข้อมูล?groupid=168">http://www.scimath.org/socialnetwork/groups/viewbulletin/694-6+การหาตำแหน่งสัมพัทธ์ของข้อมูล?groupid=168</a>
+    </p> 
     </div>
 
-    <div id="Tokyo" class="tabcontent">
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
+<!--Lesson 1 Part 3-->
+    <div id="Lesson 1 Part 3" class="tabcontent">
+      <h1>การวัดการกระจาย</h1>
+      <div align="center">
+        <iframe width="653" height="490" src="https://www.youtube.com/embed/7ojEInIXmoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จากการใช้สถิติเกี่ยวกับการวัดแนวโน้มเข้าสู่ส่วนกลาง ซึ่งเป็นค่าที่ทำ หน้าที่เป็นตัวแทนกลุ่มข้อมูล เพียงอย่างเดียว เมื่อแปลความหมายข้อมูลจึงยังไม่สมบูรณ์ ไม่ชัดเจน และ มีโอกาสคลาดเคลื่อนได้ สิ่งที่ ควรน3มาพิจารณาควบคู่ไปกับการวัดแนวโน้มเข้าสู่ส่วนกลางก็คือ ลักษณะการกระจายของกลุ่มข้อมูล ซึ่งสถิติที่ใช้คือ การวัดการกระจาย การที่ข้อมูลแต่ละชุดมีค่าต่าง ๆ กันนั้นเราเรียกว่า ข้อมูลมีการกระจาย ถ้าข้อมูลชุดนั้นประกอบ ด้วยค่าแตกต่างกันมาก เรียกว่า ข้อมูลมีการกระจายมาก ถ้าข้อมูลชุดนั้นประกอบด้วยค่าต่าง ๆ แตกต่าง กันน้อย หรือมีค่าใกล้เคียงกันเรียกว่า ข้อมูลมีการกระจายน้อย ถ้าข้อมูลนั้นประกอบด้วยค่าต่าง ๆ เท่ากัน หมด เรียกว่า ข้อมูลไม่มีการกระจาย
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้อมูลชุดที่ 1 : 9 , 12 , 37 , 73 , 105 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้อมูลชุดที่ 2 : 52 , 60 , 63 , 61 , 65 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้อมูลชุดที่ 3 : 35 , 35 , 35 , 35 , 35
+      <br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จากข้อมูลทั้ง 3 ชุด เมื่อเปรียบเทียบแล้วพบว่า ข้อมูลชุดที่ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 มีการกระจายมากที่สุด ข้อมูลชุดที่ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 มีการกระจายรองลงมา ส่วนข้อมูลชุดที่ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 ไม่มีการกระจาย 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ในการเปรียบเทียบข้อมูลหลาย ๆ ชุดว่าแตกต่างกันหรือไม่ ควรจะต้องพิจารณาถึงค่าเฉลี่ย และ การกระจายของข้อมูลควบคู่กันไปด้วย เพื่อจะช่วยให้สรุปหรือแปลความ
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หมายได้อย่างถูกต้อง เช่น เด็ก นักเรียนกลุ่มหนึ่งวัดคะแนนสอบวิชาภาษาไทยได้ 75 , 87 , 115 , 118 , 130 เด็กนักเรียนกลุ่มสองวัด คะแนนสอบวิชาภาษาไทยได้ 100 ,100 , 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;105 ,110 , 110 ค่าเฉลี่ยของคะแนน 2 ชุดนี้เท่ากัน คือ 105 ถ้าพิจารณาเฉพาะค่าเฉลี่ยจะสรุปได้ว่านักเรียน 2 กลุ่มนี้ มีคะแนนสอบวิชาภาษาไทยอยู่ในระดับเดียวกัน แต่เมื่อ
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;พิจารณาจากคะแนนแต่ละชุดจะพบว่าคะแนนสอบวิชาภาษาไทยของนักเรียนกลุ่มหนึ่งแตกต่าง กันมากกว่า คะแนนสอบวิชาภาษาไทยของนักเรียนในกลุ่มที่สอง นั่นคือ ตามข้อ
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สรุปแล้วคะแนนสอบ วิชาภาษาไทยของนักเรียน 2 กลุ่มนี้แตกต่างกัน ดังนั้น จึงสรุปได้ว่าถ้าต้องการบรรยายลักษณะของข้อมูล ให้ถูกต้องสมบูรณ์จะต้องวัดแนวโน้มเข้าสู่
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ส่วนกลางควบคู่ไปกับการวัดการกระจายด้วยเสมอ
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การวัดการกระจาย แบ่งได้ 2 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.การวัดการกระจายสัมบูรณ์ (Absolute Variation) เป็นการวัดการกระจายข้อมูลเพียงชุดเดียว มีดังนี้ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. พิสัย (Range : R)
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. ส่วนเบี่ยงเบนมาตรฐาน (Standard Deviation : S.D.,S,s) 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>พิสัย (Range : R)</b>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;พิสัย หมายถึง การหาการกระจายของข้อมูลโดยนำข้อมูลที่มีค่าสูงที่สุด ลบกับข้อมูลที่มีค่าต่ำที่สุด เพื่อให้ได้ค่าที่เป็นช่วงของการกระจาย ซึ่งสามารถบอกถึงความกว้าง
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ของข้อมูลชุดนั้นๆ สำหรับสูตรที่ใช้ในการหาพิสัยคือ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;พิสัย (R) = Xmax - Xmin 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex1. จงหาพิสัยจากข้อมูลชุดนี้ 25,19,32,29,19,21,22,31,19,20,15,22,23,20
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิธีทำ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สูตร พิสัย (R) = Xmax - Xmin               
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 32 - 15 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 17
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้อมูลชุดนี้มีพิสัย(R) เท่ากับ 17
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดังนั้นความแตกต่างของข้อมูลสูงสุดกับข้อมูลต่ำสุดมีค่าเท่ากับ 17
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ส่วนเบี่ยงเบนมาตรฐาน (Standard Deviation : S.D.,S,s)</b>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ส่วนเบี่ยงเบนมาตรฐานเป็นค่าวัดการกระจายที่สำคัญทางสถิติ เพราะเป็นค่าที่ใช้บอกถึงการกระจายของข้อมูลได้ดีกว่าค่าพิสัย และค่าส่วนเบี่ยงเบนเฉลี่ย
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การหาส่วนเบี่ยงเบนมาตรฐานสามารถหาได้ 2 วิธี
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.การหาส่วนเบี่ยงเบนมาตรฐาน(S.D.) ในกรณีข้อมูลไม่ได้มีการแจกแจงความถี่
+      <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สามารถหาได้จากสูตร 
+      <br><div align="center">สุตรที่ 1 <img src="page\images\l3-1.jpg"> หรือ สูตรที่ 2 <img src="page\images\l3-2.jpg"></div>  
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เมื่อ   S.D. คือ ส่วนเบี่ยงเบนมาตรฐาน
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คือ ข้อมูล ( ตัวที่ 1,2,3...,n)
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คือ ค่าเฉลี่ยเลขคณิต
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คือ จำนวนข้อมูลทั้งหมด
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หมายเหตุ ในกรณีที่  เป็นทศนิยมทำให้เกิดความยุ่งยากในการคำนวณ จึงควรเลือกใช้สูตรที่ 2 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex2.จากข้อมูลต่อไปนี้จงหาส่วนเบี่ยงเบนมาตรฐาน 1, 2, 4, 6, 8, 9
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิธีทำ 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ใช้สูตรที่ 2    
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page\images\l3-3.jpg"> = 1 + 4 + 16 + 36 + 64 + 91</div>
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page\images\l3-4.jpg"> = 212 </div>
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หาค่า <img src="page\images\l3-4.jpg"> = 1 + 2 + 4 + 6 + 8 + 9</div>
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page\images\l3-4.jpg"> = 30</div>
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page\images\l3-6.jpg"> = 30^2</div>
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page\images\l3-4.jpg"> = 900</div>
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page\images\l3-6.jpg"> = 6</div>
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แทนค่าในสูตร <img src="page\images\l3-8.jpg"></div>
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page\images\l3-9.jpg"></div>
+      <br><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page\images\l3-10.jpg"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S.D. = 3.52
+      <br><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Download Worksheet</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 100px; color: black; background-color: #57c8d0">Download</button>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Upload Worksheet</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 100px; color: black; background-color: #57c8d0">Upload</button>
+      <br><br><br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.stvc.ac.th/elearning/stat/csu3.html">http://www.stvc.ac.th/elearning/stat/csu3.html</a>
+     </p>
     </div>
 
-    <div id="Bangkok" class="tabcontent">
-      <h3>Bangkok</h3>
-      <p>Bangkok is the capital of Thailand.</p>
+<!--Lesson 2 Part 1-->
+    <div id="Lesson 2 Part 1" class="tabcontent">
+      <h1>การแจกแจงปกติ</h1>
+      <div align="center">
+        <iframe width="870" height="490" src="https://www.youtube.com/embed/IK2miq58Uwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การแจกแจงปกติจะช่วยให้หาความน่าจะเป็นของข้อมูลที่เราสนใจได้ ซึ่งจะกล่าวถึงการแจกแจงปกติและเส้นโครงปกติ (Normal Curve) ซึ่งเกี่ยวข้องถึงค่ามาตรฐาน (Standard score or z-score)
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ค่ามาตรฐาน (Standard Scores หรือ Z-Scores)</b>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ค่ามาตรฐานจะทำให้การเปรียบเทียบข้อมูลตั้งแต่สองค่าเป็นต้นไปมีความถูกต้องมากขึ้น โดยใช้สูตรค่ามาตรฐานแล้วจึงเปรียบเทียบข้อมูล
+      <br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สูตรการหาค่ามาตรฐาน
+      <br><div align="center"><img src="page\images\l2-1-0.png"></div> 
+      <br><div align="center"><img src="page\images\l2-1-1.png"></div>
+      <br><div align="center"><img src="page\images\l2-1-6.png"></div> 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตัวอย่างที่ 1</b> ในการสอบครั้งหนึ่งค่าเฉลี่ยเลขคณิตของคะแนนเท่ากับ 65 คะแนน ส่วนเบี่ยงเบนมาตรฐานเท่ากับ 20 คะแนน นักเรียนสองคนในชั้นนี้คะแนนมาตรฐานต่าง
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กัน 0.5 จงหาว่าเขาทั้งสองได้คะแนนสอบต่างกันเท่าไร
+      <br><div align="center"><img src="page\images\l2-1-3.png"></div> 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตอบ</b> นักเรียนทั้งสองคนได้คะแนนสอบต่างกัน 10 คะแนน
+      <br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตัวอย่างที่ 2</b> จากการตรวจสินค้าของนายดำ ในวันต้นสัปดาห์ กลางสัปดาห์ และวันสุดสัปดาห์ โดยการนับจำนวนชิ้นงานที่นายดำ ทำในวันเหล่านั้น ดังตาราง
+      <br><div align="center"><img src="page\images\l2-1-4.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันใดที่นายดำทำงานได้ดีที่สุด
+      <br><div align="center"><img src="page\images\l2-1-5.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตอบ</b> นายดำทำงานได้ดีที่สุดในวันจันทร์
+      <br><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Download Worksheet</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 100px; color: black; background-color: #57c8d0">Download</button>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Upload Worksheet</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 100px; color: black; background-color: #57c8d0">Upload</button>
+      <br><br><br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://mathdistribution.weebly.com/">http://mathdistribution.weebly.com/</a>
+      </p>
     </div>
 
-    <div id="New York" class="tabcontent">
-      <h3>New York</h3>
-      <p>New York is the capital of America.</p>
+<!--Lesson 2 Part 1-->
+    <div id="Lesson 2 Part 2" class="tabcontent">
+      <h1>การแจกแจงปกติและเส้นโค้งปกติ</h1>
+      <div align="center">
+        <iframe width="870" height="490" src="https://www.youtube.com/embed/xhNc5TvBNe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การแจกแจงปกติ เป็นการแจกแจงของข้อมูลที่ทำให้เกิดเส้นโค้งปกติ ซึ่งมีลักษณะดังรูป
+      <br><div align="center"><img src="page\images\l2-2-1.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สมบัติของเส้นโค้งปกติ
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.ค่าเฉลี่ยเลขคณิต มัธยฐาน และฐานนิยม จะมีค่าเท่ากัน และจะอยู่ ณ จุดที่เส้นตรงที่ลากผ่านจุดโด่งสุดเส้นโค้งนั้น ตั้งฉากกับแกนนอน
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.เส้นตรงที่ลากตั้งฉากกับแกนนอน ณ จุดที่เป็นค่าเฉลี่ยเลขคณิตจะเป็นแกนสมมาตร และแกนสมมาตรจะแบ่งพื้นที่ใต้เส้นโค้งปกติออกเป็น 2 ส่วนเท่าๆกัน
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.เมื่อลากปลายเส้นโค้งปกติทั้งสองข้างให้ห่างจากค่าเฉลี่ยเลขคณิตออกไป เส้นโค้งจะข้าใกล้แกนนอน แต่จะไม่ตัดแกนนอน
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.พื้นที่ใต้เส้นโค้งปกติแทนจำนวนความหนาแน่นของข้อมูล มีค่าเท่ากับ 1 เสมอ
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.ลักษณะเส้นโค้งปกติของข้อมูลสองชุด
+      <br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ลักษณะเส้นโค้งปกติของข้อมูลสองชุดที่มีค่าเฉลี่ยเลขคณิตต่างกัน แต่ส่วนเบี่ยงเบนมาตรฐานเท่ากัน
+      <br><div align="center"><img src="page\images\l2-2-2.jpg"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ลักษณะเส้นโค้งของเส้นโค้งปกติของข้อมูลสองชุดที่มีค่าเฉลี่ยเลขคณิตเท่ากัน แต่ส่วนเบี่ยงเบนมาตรฐานต่างกัน
+      <br><div align="center"><img src="page\images\l2-2-3.jpg"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ลักษณะเส้นโค้งปกติของข้อมูลสองชุดที่มีค่าเฉลี่ยเลขคณิตต่างกัน และส่วนเบี่ยงเบนมาตรฐานต่างกัน
+      <br><div align="center"><img src="page\images\l2-2-4.jpg"></div>
+      <br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>พื้นที่ใต้เส้นโครงปกติ</b>
+      <br><div><img src="page\images\l2-2-8.png"></div>
+      <br><div align="center"><img src="page\images\l2-2-5.jpg"></div>
+      <br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตัวอย่างที่ 3</b> ในการสอบครั้งหนึ่งคิดคะแนนเฉลี่ยเป็น 60 คะแนน และส่วนเบี่ยงเบนมาตรฐานเป็น 10 จงหาว่านักเรียนที่สอบได้ต่ำกว่า 50 คะแนนคิดเป็นกี่เปอร์เซ็น 
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(กำหนด Z =1 ตรงกับ A=0.3413)
+      <br><div align="center"><img src="page\images\l2-2-6.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตอบ</b> นักเรียนที่สอบได้ต่ำกว่า 50 คะแนนคิดเป็น 15.87%
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตัวอย่างที่ 4</b> ในการทดสอบความคงทนของยางล้อรถยนต์ ปรากฏว่าการทดสอบเมื่อแจกแจงแล้วเป็นโค้งปกติถ้ากำหนดให้ค่ามาตรฐานตั้งแต่ 1.3 ขึ้นไปเป็นยางล้อรถยนต์ที่
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อยู่ในสภาพดี อยากทราบว่าในการทดสอบครั้งนี้มียางล้อรถยนต์ที่อยู่ในสภาพดีกี่เปอร์เซ็น (กำหนด Z = 1.3 ตรงกับ A=0.4032)
+      <br><div align="center"><img src="page\images\l2-2-7.png"></div>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ตอบ</b> ในการทดสอบครั้งนี้มียางล้อรถยนต์ที่อยู่ในสภาพดีอยู่ 9.68%
+      <br><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Download Worksheet</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 100px; color: black; background-color: #57c8d0">Download</button>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Upload Worksheet</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 100px; color: black; background-color: #57c8d0">Upload</button>
+      <br><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://mathdistribution.weebly.com/3585363436193649359235853649359235913611358536053636364936213632364836263657360936503588365735913611358536053636.html">http://mathdistribution.weebly.com/</a>
+      </p>
     </div>
   </div>
  
 <!--Footer-->
   <div class="footer">
+    <br>
     <p><b>Powered by NANCHAPORN</b></p>
-    <p>© 2018 LOOQ & STYLE All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
+    <p>© 2018 Math by Kru-Som All rights reserved &nbsp;&nbsp;<a href="#">Term of Use</a></p>
   </div> 
 
 <!--script menu-->

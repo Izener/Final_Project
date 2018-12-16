@@ -1,10 +1,10 @@
 .footer {
-  position: fixed;
+
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f5f5f5;
-  color: grey;
-  text-align: left;
+  background-color: white;
+  text-align: center;
   font-size: 11px;
+  color: black;
 }
