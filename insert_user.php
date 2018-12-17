@@ -1,12 +1,12 @@
 <? php
 	$user = $_POST['user'];
-	$password = $_POST['psw'];
+	$pass = $_POST['password'];
 	$email = $_POST['email'];
 
 	//connect with MySQL
 	$link = mysqli_connect("localhost", "root");
 	mysqli_set_charset($link, 'utf8'); //thi language
-	$sql = "use userdb";
+	$sql = "userdb";
 	$result = mysqli_query($link, $sql);
 
 	//check error
@@ -25,9 +25,9 @@
 
 	if (Emailcheck($email)) //check e-mail
 	{
-		$encrypt_password=shal($psw);
+		$encrypted_password=shal($password);
 		//new record
-		$sql = "Insert into usertbl(user, email, password)"."values('$user', '$email', '$encrypt_password');";
+		$sql = "Insert into usertbl(user, email, password)"."values('$user', '$email', '$encrypted_password');";
 		$result = mysqli_query($link, $sql);
 		if ($result)
 		{

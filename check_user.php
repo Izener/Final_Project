@@ -1,13 +1,13 @@
 <? php 
 	$user = $_POST['user'];
-	$pass = $_POST['psw'];
+	$pass = $_POST['password'];
 
 	//connect with mysql
 	$link = mysqli_connect("localhost", "root");
 	mysql_set_charset($link, 'utf8');
-	$sql = "use userdb";
+	$sql = "userdb";
 	$result = mysqli_query($link, $sql);
-	$encrypted_mypassword=shal($psw);
+	$encrypted_mypassword=shal($password);
 
 	$sql = "SELECT count(*) FROM usertbl WHERE user='$user' AND ".
 				"password = '$encrypted_mypassword'";
@@ -18,11 +18,14 @@
 		echo "Username and Password Correct <p>";
 
 		$sql = "SELECT * FROM usertbl WHERE user='$user' AND ".
-				"password= '$ebcrypted_myoassword'";
+				"password= '$encrypted_mypassword'";
 		$result=mysqli_query($link, $sql);
 		$row = mysqli_fetch_array($result);
+		
 		echo "Username: ".$row['user']."<br>";
 		echo "E-mail: ".$row['email']."<br>";
+
+		return('index.html');
 	}
 	else
 	{
